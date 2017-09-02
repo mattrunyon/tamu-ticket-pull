@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 </head>
@@ -26,21 +27,22 @@
 	</div>
 
 	<div class='row'>
-		<div class="input-field col s3">
+		<div class='col s2'>Number of sports passes by classification<i class="material-icons tooltipped" style='cursor: default' data-html='true' data-delay='50' data-position='right' data-tooltip='Classification is determined by meeting AT LEAST ONE requirement below<br>U4 - 90hrs or 4th year at A&M<br>U3 - 60hrs or 3rd year at A&M<br>U2 - 30hrs or 2nd year at A&M<br>U1 - 0hrs or 1st year at A&M'>help_outline</i></div>
+		<div class="input-field col s2">
 			<input id="u4passes" type="number" value='0' onclick="this.select()">
-			<label for="u4passes">Number of U4 or Grad Student Sports Passes</label>
+			<label for="u4passes">U4 or Grad Student</label>
 		</div>
-		<div class="input-field col s3">
+		<div class="input-field col s2">
 			<input id="u3passes" type="number" value='0' onclick="this.select()">
-			<label for="u3passes">Number of U3 Sports Passes</label>
+			<label for="u3passes">U3</label>
 		</div>
-		<div class="input-field col s3">
+		<div class="input-field col s2">
 			<input id="u2passes" type="number" value='0' onclick="this.select()">
-			<label for="u2passes">Number of U2 Sports Passes</label>
+			<label for="u2passes">U2</label>
 		</div>
-		<div class="input-field col s3">
+		<div class="input-field col s2">
 			<input id="u1passes" type="number" value='0' onclick="this.select()">
-			<label for="u1passes">Number of U1 Sports Passes</label>
+			<label for="u1passes">U1</label>
 		</div>
 	</div>
 
@@ -54,8 +56,8 @@
 	<div id='results'>
 		<div id='pullDay'>You can pull on Monday</div>
 		<div id='costs'>
-			<div>You need <span class='guestConvCount'>0</span> guest conversions.</div>
-			<div>You need <span class='guestTicketCount'>0</span> additional guest tickets.</div>
+			<div>You need <span class='guestConvCount'>0</span> guest conversions.<i class="material-icons tooltipped" style='cursor: default' data-delay='50' data-position='right' data-tooltip='A guest conversion is a ticket pulled with a sports pass that you pay to get the guest label on. The guest label means a TAMU student ID is not required to enter the game with this ticket. Guest labels are available for all games and any student ticket may be converted at any time including game day for half the cost of a straight up guest ticket.'>help_outline</i></div>
+			<div>You need <span class='guestTicketCount'>0</span> additional guest tickets.<i class="material-icons tooltipped" style='cursor: default' data-delay='50' data-position='right' data-tooltip='A guest ticket is purchased at full price without needing an extra sports pass and does not require a TAMU student ID to enter the game. They are available on a first come, first serve basis. For big games, they will NOT be available. The limit is 1 guest ticket per sports pass.'>help_outline</i></div>
 			<div>This will cost you $<span id='totalCost'>0</span></div>
 			<div>That cost comes from <span class='guestTicketCount'>0</span> guest tickets at $<span class='guestTicketCost'>0</span> each and <span class='guestConvCount'>0</span> guest conversions at $<span class='guestConvCost'>0</span> each.</div>
 			<div>You will need <span id='studentIdsNeeded'>0</span> people with TAMU student IDs or else you will have to pay $<span class='guestConvCost'>0</span> per additional guest on game day.</div>
