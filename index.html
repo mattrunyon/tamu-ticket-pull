@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</head>
+<body>
+<div id='mainContainer' class='container'>
+	<div class='row'>
+		<div class='col s12'>
+			<h3 class='center'>Pulling tickets for Texas A&M football games</h3>
+		</div>
+	</div>
+
+	<!-- Inputs -->
+	<div class='row'>
+		<div class="input-field col s6">
+			<input id="ticketCount" type="number" value='0' onclick="this.select()">
+			<label for="ticketCount">Total number of tickets you need</label>
+		</div>
+		<div class="input-field col s6">
+			<input id="tamuStudents" type="number" value='0' onclick="this.select()">
+			<label for="tamuStudents">Number of people with TAMU Student IDs in your group</label>
+		</div>
+	</div>
+
+	<div class='row'>
+		<div class="input-field col s3">
+			<input id="u4passes" type="number" value='0' onclick="this.select()">
+			<label for="u4passes">Number of U4 or Grad Student Sports Passes</label>
+		</div>
+		<div class="input-field col s3">
+			<input id="u3passes" type="number" value='0' onclick="this.select()">
+			<label for="u3passes">Number of U3 Sports Passes</label>
+		</div>
+		<div class="input-field col s3">
+			<input id="u2passes" type="number" value='0' onclick="this.select()">
+			<label for="u2passes">Number of U2 Sports Passes</label>
+		</div>
+		<div class="input-field col s3">
+			<input id="u1passes" type="number" value='0' onclick="this.select()">
+			<label for="u1passes">Number of U1 Sports Passes</label>
+		</div>
+	</div>
+
+	<div class='row'>
+		<div class='input-field col s4 offset-s4'>
+			<select id='gameSelect'></select>
+			<label for='gameSelect'>What game is this for?</label>
+		</div>
+	</div>
+
+	<div id='results'>
+		<div id='pullDay'>You can pull on Monday</div>
+		<div id='costs'>
+			<div>You need <span class='guestConvCount'>0</span> guest conversions.</div>
+			<div>You need <span class='guestTicketCount'>0</span> additional guest tickets.</div>
+			<div>This will cost you $<span id='totalCost'>0</span></div>
+			<div>That cost comes from <span class='guestTicketCount'>0</span> guest tickets at $<span class='guestTicketCost'>0</span> each and <span class='guestConvCount'>0</span> guest conversions at $<span class='guestConvCost'>0</span> each.</div>
+			<div>You will need <span id='studentIdsNeeded'>0</span> people with TAMU student IDs or else you will have to pay $<span class='guestConvCost'>0</span> per additional guest on game day.</div>
+		</div>
+	</div>
+</div>
+</body>
+
+<script type='text/javascript' src='./index.js'></script>
+</html>
