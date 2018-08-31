@@ -1,11 +1,11 @@
 var gameCosts = {
-	'Nicholls State': 60,
-	'Louisiana Lafayette': 60,
-	'South Carolina': 90,
-	'Alabama (Additional tickets unlikely)': 100,
-	'Mississippi State': 90,
-	'Auburn': 90,
-	'New Mexico': 60
+	'Northwestern State': 50,
+	'Clemson (No additional guest tickets. Only conversions)': 125,
+	'Louisana Monroe': 50,
+	'Kentucky': 80,
+	'Ole Miss': 80,
+	'UAB': 50,
+	'LSU': 110
 }
 
 $(document).ready(function() {
