@@ -1,11 +1,11 @@
 var gameCosts = {
-	'Northwestern State': 50,
-	'Clemson (No additional guest tickets. Only conversions)': 125,
-	'Louisana Monroe': 50,
-	'Kentucky': 80,
-	'Ole Miss': 80,
-	'UAB': 50,
-	'LSU': 110
+	'Texas State': 50,
+	'Lamar': 50,
+	'Auburn': 100,
+	'Alabama (Likely no additional guest tickets. Only conversions)': 125,
+	'Mississippi State': 80,
+	'UTSA': 50,
+	'South Carolina': 80
 }
 
 $(document).ready(function() {
